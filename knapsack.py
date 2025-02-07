@@ -96,7 +96,7 @@ for gen in range(generations):
         pop = tournament_selection(pop,population,importance,k)
         
     else:
-        print(f'Generation: {gen}')
+        #print(f'Generation: {gen}')
         cross_pop = np.zeros([population,len(importance)])
         index = [i for i in range(len(pop)) if i%2==0]
         for i in index:
